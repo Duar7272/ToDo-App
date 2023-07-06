@@ -1,0 +1,21 @@
+# Code for creating and managing a to-do list
+
+class Task:
+    def __init__(self, description):
+        self.description = description
+        self.completed = False
+
+    def mark_as_completed(self):
+        self.completed = True
+
+    def mark_as_incomplete(self):
+        self.completed = False
+
+# Example usage
+task1 = Task("Buy groceries")
+task2 = Task("Complete homework")
+
+task1.mark_as_completed()
+
+print(task1.description, task1.completed)  # Output: Buy groceries True
+print(task2.description, task2.completed)  # Output: Complete homework False
